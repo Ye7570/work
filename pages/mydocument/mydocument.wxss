@@ -1,0 +1,116 @@
+/* pages/mydocument/mydocument.wxss */
+page{
+  width:100%;
+  background: #F3F3F3;
+   height: 100%;
+}
+.view-style{
+  width:100%;
+  background: #F3F3F3;
+  padding:16rpx 50rpx 0 58rpx;
+  height: 100%;
+  box-sizing: border-box;
+}
+/* .content{
+  
+} */
+ .view-style>.left:nth-child(2n+1){
+  display: inline-block;
+  margin-top: 50rpx;
+  width:296rpx;
+  height:352rpx;
+  background:#FFFFFF; 
+  margin-right: 50rpx;
+  position: relative;
+ 
+}
+.view-style>.left:nth-child(2n){
+   display: inline-block;
+  width:296rpx;
+  height:352rpx;
+  background:#FFFFFF; 
+  position: relative;
+  bottom: -54rpx;
+}
+ .center{
+position: absolute;
+   /* display: inline-block; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+height: 100%;
+}
+.left text{
+  font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 28rpx;
+  color: #FFFFFF;
+} 
+.more{
+  width:100%;
+  display: flex;justify-content: center;
+  align-items: center;
+  margin-top:100rpx;
+  padding-bottom: 36rpx;
+  background: #F3F3F3;
+}
+.more text{
+   color:#CCCCCC;
+  font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 20rpx;
+}
+.view-style .current{
+  opacity: 0.8;
+  background: #999 !important;
+}
+.null1{
+  width:100%;
+  margin-top: 268rpx;
+}
+.null1-top{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.null1-top image{
+  width:272rpx;
+  height:272rpx;
+}
+.null1-top text{
+  font-family: PingFang SC;
+  font-weight: Medium;
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 30rpx;
+}
+.null1-bottom{
+  margin-top: 12rpx;
+  width:100%;
+  text-align: center;
+   /* display: flex;
+  flex-direction: row; */
+  /* justify-content: center;  */
+  /* align-items: center; */
+  }
+  .null1-bottom button{
+    border:2rpx solid #595959;
+    background: #FFFFFF;
+    box-shadow: 0 2rpx 2rpx #C4D7FA;
+    font-family: PingFang SC;
+    font-weight: Regular;
+    font-size: 28rpx;
+    color: #595959;
+     width:180rpx;
+    height:58rpx;
+    display: inline-block;
+    border-radius: 20rpx;
+    text-align: center;
+    line-height: 58rpx;
+  }
+  .null1-bottom>button:nth-child(2){
+   margin-left: 20rpx;
+  }

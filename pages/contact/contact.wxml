@@ -1,0 +1,8 @@
+<!--pages/contact/contact.wxml-->
+<view class='view-style'>
+<view class='content'>
+<view class='top'><text>QQ:</text><text>501971965</text></view>
+<view class='top1'><text>TEL：</text><text>020-39354477</text></view>
+
+</view>
+</view>

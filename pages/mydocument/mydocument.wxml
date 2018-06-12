@@ -1,0 +1,16 @@
+<!--pages/mydocument/mydocument.wxml-->
+<view class='view-style' catchtap='made1'>
+
+<block wx:for="{{list}}" wx:key="{{i}}" wx:if="{{flag1}}">
+<view class="left {{currentIndex==index?'current':''}}" catchtap='made' data-index="{{index}}" >
+<view class='center'><text wx:if="{{currentIndex==index}}">制作照片</text> </view>
+</view>
+
+</block>
+
+
+   <view class='more' wx:if="{{flag1}}"><text>没有更多啦</text></view>
+     <view class='null1'><view class='null1-top'><image src='../images/no file.png'></image><text>您还没有上传过证件照噢</text></view>
+                <view class='null1-bottom'><button>打印文件</button></view>
+                </view>
+</view>

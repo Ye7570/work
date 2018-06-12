@@ -1,0 +1,271 @@
+/* pages/home/home.wxss */
+page{
+  position: relative;
+  height:100%;
+  width:100%;
+}
+.tab-bar{
+  z-index: 100;
+position: fixed;
+width:100%;
+bottom:97rpx;
+height:10vh;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+ align-items: center; 
+}
+.menu-item image{
+height:64rpx;
+width:64rpx;
+}
+.menu-item:nth-child(2) image{
+height:70rpx;
+width:210rpx;
+}
+.view-style{
+  height:100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.view-top{
+  height:35%;
+  background: #ccc;
+}
+.view-content{
+  height:60%;
+  width:100%;
+ 
+
+}
+.view-content{
+   position: relative; 
+  overflow: hidden;
+  box-sizing: border-box;
+  /* opacity: 0.4; */
+}
+.view-content image{
+  width:100%;
+   height: 100%; 
+   position: absolute;
+   top:0;  
+   opacity: 50%;
+}
+.view-content .content1{
+width:580rpx;
+height:173rpx;
+ margin-top:120rpx; 
+  margin-left:83rpx;  
+background: #fff;
+/* z-index: 100; */
+   position: relative;  
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10rpx;
+ /* opacity: 0.4; */
+ /* top:  */
+}
+.dayin{
+  width:120rpx;
+  height:120rpx;
+   position: absolute; 
+  /* background: #fff; */
+  left:40rpx;
+ top:-18rpx;
+
+}
+.content1 text{
+  font-family: PingFangSC-Regular;
+  color: #595959;
+
+  font-size: 29rpx;
+  
+
+}
+.dayin image{
+  width:100%;
+  height:100%;
+  z-index: 10;
+  opacity: 1;
+}
+.view-content .active {
+  background: #f7f7f7 !important;
+}
+.view-content .active .dayin{
+height:130rpx;
+width:130rpx;
+}
+.view-content .active .dayin image{
+height:130rpx;
+width:130rpx;
+}
+
+.view-content .active .dayin1{
+height:130rpx;
+width:130rpx;
+}
+.view-content .active .dayin1 image{
+height:130rpx;
+width:130rpx;
+}
+.view-content .content2{
+width:580rpx;
+height:173rpx;
+ margin-top:99rpx; 
+  margin-left:83rpx;  
+background: #fff;
+ position: relative; 
+     display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10rpx;
+}
+.dayin1{
+  width:120rpx;
+  height:120rpx;
+   position: absolute; 
+  /* background: #fff; */
+  left:40rpx;
+ top:-18rpx;
+
+}
+.dayin1 image{
+  width:100%;
+  height:100%;
+  z-index: 10;
+  opacity: 1;
+}
+.content2 text{
+  font-family: PingFangSC-Regular;
+  color: #595959;
+
+  font-size: 29rpx;
+  
+
+}
+.yuanquan1{
+  width:20rpx;
+  height:20rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:-20rpx;
+  left:145rpx;
+}
+.yuanquan1>image{
+  width:20rpx;
+  height:20rpx;
+}
+.yuanquan2{
+  width:18rpx;
+  height:18rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom:0rpx;
+  left:0rpx;
+}
+.yuanquan2>image{
+  width:18rpx;
+  height:18rpx;
+}
+.yuanquan3{
+  width:16rpx;
+  height:16rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom:54rpx;
+  left:174rpx;
+}
+.yuanquan3>image{
+  width:16rpx;
+  height:16rpx;
+}
+.yuanquan4{
+  width:14rpx;
+  height:14rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom:32rpx;
+  left:463rpx;
+}
+.yuanquan4>image{
+  width:14rpx;
+  height:14rpx;
+}
+.yuanquan5{
+  width:16rpx;
+  height:16rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:32rpx;
+  left:520rpx;
+}
+.yuanquan5>image{
+  width:16rpx;
+  height:16rpx;
+}
+.yuanquan6{
+  width:15rpx;
+  height:15rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:32rpx;
+  left:-5rpx;
+  opacity:0.5;
+}
+.yuanquan6>image{
+  width:15rpx;
+  height:15rpx;
+}
+.yuanquan7{
+  width:20rpx;
+  height:20rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:-20rpx;
+  left:150rpx;
+ 
+}
+.yuanquan7>image{
+  width:20rpx;
+  height:20rpx;
+}
+.yuanquan8{
+  width:13rpx;
+  height:13rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom:13rpx;
+  left:180rpx;
+ 
+}
+.yuanquan8>image{
+  width:13rpx;
+  height:13rpx;
+}
+.yuanquan9{
+  width:16rpx;
+  height:16rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:60rpx;
+  left:400rpx;
+ 
+}
+.yuanquan9>image{
+  width:16rpx;
+  height:16rpx;
+}
+.yuanquan10{
+  width:13rpx;
+  height:13rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom:50rpx;
+  right:0rpx;
+ 
+}
+.yuanquan10>image{
+  width:13rpx;
+  height:13rpx;
+}

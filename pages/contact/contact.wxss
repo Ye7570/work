@@ -1,0 +1,50 @@
+/* pages/contact/contact.wxss */
+
+page{
+  width:100%;
+  background: #F3F3F3;
+}
+.view-style{
+  width:100%;
+  background: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 52rpx;
+  box-sizing: border-box;
+}
+.content{
+  width:660rpx;
+  height:238rpx;
+  background: #FFFFFF;
+
+border-radius: 20rpx;
+box-shadow: 0 2rpx 4rpx #C4D7FA;
+box-sizing: border-box;
+/* display: flex;
+flex-direction: column;
+align-items: center; */
+ padding-left: 138rpx; 
+/* padding-top: 66rpx; */
+}
+.content text{
+  font-family: PingFang SC;
+  font-weight: Regular;
+  font-size:32rpx;
+  color: #595959; 
+}
+.top{
+  margin-top: 52rpx;
+}
+.top1{
+  margin-top: 42rpx;
+}
+.top>text:nth-child(1){
+  font-size: 28rpx;
+margin-right: 70rpx;
+}
+.top1>text:nth-child(1){
+  font-size: 28rpx;
+margin-right: 40rpx;
+}
+

@@ -1,0 +1,80 @@
+<!--pages/made-detail/made-detail.wxml-->
+<view class='view-style'>
+<view class='view-top'>
+<view class='doc'><image src='../images/jiahao.png'></image></view>
+<view class='what' bindtap='what1'><text>?</text></view>
+</view>
+<view class='what-content' bindtap='what' wx:if="{{flag5}}"><view class='what-text1'><text>“ 温馨提示”</text></view>
+
+<view class='what-text2'><text>1.着深色有领的衣服，五官露出，笑不露齿，两眉 两耳露出，不戴首饰（颈链，耳环）。   </text>
+ <text>2.拍照时请关闭美颜功能，在光线明亮的环境中对 着白色墙壁拍自己最满意的一张上传。</text><text>3.请勿自行修图，不要裁剪图片，直接上传原图， 后台适度的祛痘美白功能（自行修图可能导致人 像与本人相差太远而无法办证）。</text><text>4.身份证含回执一份，请在备注栏填写办证城市。</text> 
+
+</view>
+</view>
+<view class='content' wx:if="{{flag6}}">
+<view class='content-top'>
+ <text class="section__title">门店地址</text>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{casArray}}">
+    <view class="picker">
+    <text> {{casArray[casIndex]}}</text>
+    </view>
+  </picker></view>
+<view class='content-bottom'>
+<text >收货方式</text>
+<text bindtap='wendian' style="{{flag1==false?'background: #E6F3FF;':'background: #fff; '}}">门店自取</text>
+<text bindtap='songhuo' style="{{flag1==true?'background: #E6F3FF;':'background: #fff; '}}">送货上门</text>
+</view>
+<view class='address'  bindtap='address'  wx:if="{{flag2}}">
+<text>请选择收货地址</text>
+</view>
+<view class='address1' wx:if="{{flag3}}">
+<view class='address1-top'><text>{{list.userName}}</text><text>{{list.telNumber}}</text></view>
+<view class='address1-bottom'><text>{{list.detailInfo}}</text></view>
+</view>
+</view>
+
+<view class='next-content' >
+<view class='next-top'>
+<view class='top-text'><text>打印类型</text></view>
+<view class='top-bottom'>
+<block wx:for="{{list2}}" wx:key="{{i}}" >
+<text  bindtap="target1" data-index="{{index}}" class="{{currentIndex==index?'text-first':''}}">{{item}}</text>
+</block>
+</view>
+ <view class='line'><text></text></view> 
+</view>
+<!-- <view class='next-top1'>
+<view class='top-text'><text>装订类型</text></view>
+<view class='top-bottom1'>
+<block wx:for="{{list1}}" wx:key="{{i}}"  >
+<text data-index="{{index}}" bindtap="target2" class="{{currentIndex1==index?'text-first':''}}">{{item}}</text>
+</block>
+</view>
+  
+</view>  -->
+<view class='num'>
+<view class='num1'>
+<view class='num-text'><text>打印份数</text></view>
+<view class='num-right'><text>-</text><text>1</text><text>+</text></view>
+</view>
+ <!-- <view class='line'><text></text></view>  -->
+</view>
+<view class='beizhu'>
+<view class='beizhu-text'><text>备注</text>
+ <input placeholder='不超过20字' placeholder-class='place'></input> 
+</view>
+ <view class='beizhu-right'></view> 
+ <!-- <view class='line'><text></text></view>  -->
+</view>
+</view>
+<view class='money' >
+<view class='money-top'><text>打印总价</text><text>1 * ¥0.35</text></view>
+<!-- <view class='money-top'><text>打印总价</text><text>1 * ¥0.35</text></view> -->
+<view class='money-bottom'><text>钱包抵扣</text><text>- ¥ 0.02</text></view>
+</view>
+
+<view class='bottom'>
+<view class='bottom-text' bindtap='next'><text>下一步</text></view>
+
+</view>
+</view>

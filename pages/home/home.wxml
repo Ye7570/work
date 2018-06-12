@@ -1,0 +1,31 @@
+<!--pages/home/home.wxml-->
+<import src="../temlate/template.wxml" />  
+<template is="tabBar" data="{{tabBar: tabBar}}" /> 
+<view class='view-style'>
+<view class='view-top'></view>
+<view class='view-content'>
+<image src='../images/backround.png'></image>
+ <view class="content1 {{flag1==true?'active':''}}" bindtap='document1' >
+<view class='dayin'><image src='../images/file.png'></image></view>
+<text>文件打印</text>
+<view class='yuanquan1'><image src='../images/bubble_1.png'></image></view>
+<view class='yuanquan2'><image src='../images/bubble_1.png'></image></view>
+<view class='yuanquan3'><image src='../images/bubble_1.png'></image></view>
+<view class='yuanquan4'><image src='../images/bubble_1.png'></image></view>
+ <view class='yuanquan5'><image src='../images/bubble_1.png'></image></view> 
+</view>
+<view class="content2 {{flag2==true?'active':''}}" bindtap='madedetail'>
+<view class='dayin1'><image src='../images/camera.png'></image></view>
+<text>证件照制作</text>
+<view class='yuanquan6'><image src='../images/bubble_2.png'></image></view>
+ <view class='yuanquan7'><image src='../images/bubble_2.png'></image></view>
+ <view class='yuanquan8'><image src='../images/bubble_2.png'></image></view> 
+ <view class='yuanquan9'><image src='../images/bubble_2.png'></image></view> 
+  <view class='yuanquan10'><image src='../images/bubble_2.png'></image></view>  
+</view> 
+
+</view>
+</view>
+
+
+

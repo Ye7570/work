@@ -1,0 +1,17 @@
+<!--pages/success/success.wxml-->
+<view class='view-style'>
+<view class='view-top'>
+<text>订单提交成功</text>
+<text>您的文档正在等待打印</text>
+</view>
+<view class='view-center'>
+<view class='line'><text></text></view>
+<view class='line-bottom'><text>查看订单详情</text><text>>></text></view>
+
+</view>
+<view class='bottom'>
+<view class='button'><text>邀请好友</text></view>
+<view class='bottom-text'><text>转发分享获得红包奖励</text></view>
+</view>
+
+</view>

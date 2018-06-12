@@ -1,0 +1,46 @@
+<!--pages/mine/mine.wxml-->
+ <import src="../temlate/template.wxml" />  
+<template is="tabBar" data="{{tabBar: tabBar}}" />  
+<view class='view-style'>
+<view class='view-top'>
+<view class='view-text'>
+<text>Cuagiahong</text>
+</view>
+<view class='view-bottom'>
+<view class='view-image'><image src='../images/bubble_1.png'></image></view>
+<view class='view-right'>
+<view class='right-top'><text>广工西生活区6栋 666</text></view>
+<view class='right-bottom' bindtap='money'><view class='bottom-left'><text>0.05</text><text>钱包余额</text></view>
+
+<view class='bottom-right'><text>0.00</text><text>分销奖励</text></view>
+</view>
+</view>
+</view>
+</view>
+<view class='view-content'>
+<view class='line' bindtap='ordercenter'>
+<view class='image' ><image src='../images/order.png'></image></view>
+<view class='line-text'><text>订单中心</text></view>
+</view>
+<view class='line1' bindtap='file'>
+<view class='image1'><image src='../images/file_2.png'></image></view>
+<view class='line-text1'><text>我的文档</text></view>
+</view>
+<view class='line1' bindtap='mydocument'>
+<view class='image1'><image src='../images/photo.png'></image></view>
+<view class='line-text1'><text>我的证件照</text></view>
+</view>
+
+<view class='line1'>
+<view class='image1'><image src='../images/share.png'></image></view>
+<view class='line-text1'><text>推荐给朋友</text></view>
+<view class='line-text2'><text>分享六悦，获得红包</text></view>
+</view>
+
+<view class='line1' bindtap='contact'>
+<view class='image1'><image src='../images/ervice.png'></image></view>
+<view class='line-text1'><text>联系客服</text></view>
+</view>
+
+</view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/file/file.wxml-->
+<view class='view-style'>
+<view  class="item1 {{currentIndex==index && isTouchMove==true? 'touch-move-active' : ''}}" data-index="{{index}}" catchtouchstart="touchstart" catchtouchmove="touchmove" wx:for="{{list}}" wx:key="{{i}}">
+<view class='item2'>
+<text>{{item.name}}</text>
+<text>{{item.num}}</text>
+</view>
+<view class='item-right' wx:if="{{currentIndex==index && isTouchMove==true}}"><text>打印文件</text></view>
+</view>
+<!-- <view class='item'>
+<text>物理学院光电信息光学12试卷</text>
+<text>共20页</text>
+</view>
+<view class='item'>
+<text>物理学院光设方向毕业论文</text>
+<text>共120页</text>
+</view> -->
+<view class='more' wx:if="{{flag1}}"><text>没有更多啦</text></view>
+    <view class='null1' wx:if="{{flag1}}"><view class='null1-top'><image src='../images/no file.png'></image><text>您现在还没有任何订单噢</text></view>
+                <view class='null1-bottom'><button>打印文件</button></view>
+                </view>
+                
+</view>

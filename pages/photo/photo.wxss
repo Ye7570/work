@@ -1,0 +1,54 @@
+/* pages/photo/photo.wxss */
+.view-style{
+  background: #fff;
+  padding:140rpx 110rpx 0 112rpx;
+  box-sizing: border-box;
+       /* display: flex; 
+    flex-wrap: wrap;
+  justify-content: space-between;  */
+ 
+   /* align-items: center;   */
+}
+
+
+.content{
+   /* height:170rpx; */
+  width:150rpx; 
+  box-sizing: border-box;
+      display: flex; 
+ flex-direction: column;
+  /* justify-content: center; */
+    align-items: center;   
+    margin-bottom: 64rpx;
+  margin-right: 38rpx; 
+  /* display: inline-block; */
+  float: left;
+}
+.view-style>.content:nth-child(3n){
+  margin-right: 0;
+}
+.image{
+  width:72rpx;
+  height:88rpx;
+  border:2rpx solid #707070;
+}
+.bottom{
+  margin-top: 20rpx;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom>text:nth-child(1){
+  font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color: #595959;
+}
+.bottom>text:nth-child(2){
+  font-family: PingFang SC;
+  font-weight: Medium;
+  font-size: 20rpx;
+  color: #999999;
+}

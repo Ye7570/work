@@ -1,0 +1,72 @@
+<!--pages/document/document.wxml-->
+<view class='view-style'>
+<view class='view-top'>
+<view class='upload'><image src='../images/jiahao.png'></image></view>
+
+</view>
+<view class='view-text' ><text>支持“pdf，word，excel，ppt，jpg，png”格式</text></view>
+
+<view class='content'>
+<view class='content-top'>
+ <text class="section__title">门店地址</text>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{casArray}}">
+    <view class="picker">
+    <text> {{casArray[casIndex]}}</text>
+    </view>
+  </picker></view>
+<view class='content-bottom'>
+<text >收货方式</text>
+<text bindtap='wendian' style="{{flag1==false?'background: #E6F3FF;':'background: #fff; '}}">门店自取</text>
+<text bindtap='songhuo' style="{{flag1==true?'background: #E6F3FF;':'background: #fff; '}}">送货上门</text>
+</view>
+<view class='address'  bindtap='address'  wx:if="{{flag2}}">
+<text>请选择收货地址</text>
+</view>
+<view class='address1' wx:if="{{flag3}}">
+<view class='address1-top'><text>{{list.userName}}</text><text>{{list.telNumber}}</text></view>
+<view class='address1-bottom'><text>{{list.detailInfo}}</text></view>
+</view>
+</view>
+<view class='next-content' >
+<view class='next-top'>
+<view class='top-text'><text>打印类型</text></view>
+<view class='top-bottom'>
+<block wx:for="{{list2}}" wx:key="{{i}}" >
+<text  bindtap="target1" data-index="{{index}}" class="{{currentIndex==index?'text-first':''}}">{{item}}</text>
+</block>
+</view>
+ <view class='line'><text></text></view> 
+</view>
+<view class='next-top1'>
+<view class='top-text'><text>装订类型</text></view>
+<view class='top-bottom1'>
+<block wx:for="{{list1}}" wx:key="{{i}}"  >
+<text data-index="{{index}}" bindtap="target2" class="{{currentIndex1==index?'text-first':''}}">{{item}}</text>
+</block>
+</view>
+  <!-- <view class='line'><text></text></view>   -->
+</view> 
+<view class='num'>
+<view class='num1'>
+<view class='num-text'><text>打印份数</text></view>
+<view class='num-right'><text bindtap='jianhao'>-</text><text>{{num}}</text><text bindtap='jiahao'>+</text></view>
+</view>
+ <!-- <view class='line'><text></text></view>  -->
+</view>
+<view class='beizhu'>
+<view class='beizhu-text'><text>备注</text>
+ <input placeholder='不超过20字' placeholder-class='place'></input> 
+</view>
+ <view class='beizhu-right'></view> 
+ <!-- <view class='line'><text></text></view>  -->
+</view>
+</view>
+<view class='money'  wx:if="{{flag}}">
+<view class='money-top'><text>打印总价</text><text>1 * ¥0.35</text></view>
+<view class='money-bottom'><text>钱包抵扣</text><text>- ¥ 0.02</text></view>
+</view>
+<view class='bottom'>
+<view class='bottom-text' bindtap='next'><text>下一步</text></view>
+
+</view>
+</view>

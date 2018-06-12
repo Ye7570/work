@@ -1,0 +1,34 @@
+<!--pages/order-detail/order-detail.wxml-->
+<view class='view-style'>
+<view class='top'>
+<view class='top-left'><text>一寸照</text></view>
+<view class='top-right'><text>排队中</text></view>
+</view>
+<view class='center'>
+<view class='center-top' wx:if="{{flag}}"><text>门店自取</text></view>
+<view class='center-top1'><text>送货上门</text><view class='top1-right'><text>配送员：</text><text>小张</text></view></view>
+<view class='center-bottom' wx:if='{{flag}}'><text>龙洞广工校内A区宿舍楼下</text>
+ <text>取货码：232323</text> 
+</view>
+<view class='center-bottom1'><text>龙洞广工校内A区宿舍楼下</text>
+<view class='bottom1-bottom'><text>胡胡胡</text><text>1312323444</text></view>
+</view>
+</view>
+<view class='center1'>
+<view class='image'></view>
+
+</view>
+<view class='center2'><text>照片底色</text><text>白底</text></view>
+<view class='center3'><view class='price'><text>照片价格</text><text>￥26.00</text></view>
+<view class='price'><text>配 送 费</text><text>￥0.5</text></view>
+<view class='price'><text>钱包抵扣</text><text>- ￥0.5</text></view>
+<view class='price'><text>合 计</text><text>￥26.00</text></view>
+</view>
+<view class='bottom'><text>订单编号：123123</text>
+<text>下单时间：2018-02-12 19:08</text>
+<text>打印时间：2018-02-12 19:18</text>
+<text>完成时间：2018-02-13 12:18</text>
+<text>取消时间：2018-02-12 19:18</text>
+<text>打印店铺：龙洞广工校内A区宿舍楼下</text>
+</view>
+</view>

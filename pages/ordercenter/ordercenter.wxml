@@ -1,0 +1,141 @@
+<!--pages/ordercenter/ordercenter.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <view class='content1' wx:if="{{flag1}}">
+                <view class='content1-item'><text>2018-02-12 19:08</text>
+                <view class='item'>
+                <view class='item-top'><text>物理学院光电傅里叶光学15试卷</text><text>￥0.25</text></view>
+<view class='item-bottom'><text>35页</text><text>共1份</text><text>（钱包抵扣￥0.10）</text></view>
+                
+                </view>
+                </view>
+                
+                 <view class='content1-item'><text>02-12 14:20</text>
+                <view class='item'>
+                <view class='item-top'><text>一寸照</text><text>￥12.00</text></view>
+<view class='item-bottom'><text>12张</text><text>共1份</text><text>（钱包抵扣￥1.00）</text></view>
+                </view>
+                </view>
+
+  <view class='content1-item'><text>02-12 9:20</text>
+                <view class='item'>
+                <view class='item-top'><text>一寸照</text><text>￥26.00</text></view>
+<view class='item-bottom'><text>24张</text><text>共2份</text><text></text></view>
+                </view>
+                <view class='order'>
+                <view class='order-text'><text>取消订单</text></view>
+                </view>
+                </view>
+
+<view class='content1-item'><text>02-12 9:20</text>
+                <view class='item'>
+                <view class='item-top'><text>物理学院光电傅里叶光学15试卷</text><text>￥12.00</text></view>
+<view class='item-bottom'><text>35页</text><text>共1份</text><text>（钱包抵扣￥1.00）</text></view>
+                </view>
+                <view class='order'>
+                <view class='order-text'><text>取消订单</text></view>
+                </view>
+                </view>
+                <view class='more'><text>没有更多啦</text></view>
+                </view>
+          <view class='null1'><view class='null1-top'><image src='../images/no orde.png'></image><text>您现在还没有任何订单噢</text></view>
+                <view class='null1-bottom'><button>打印文件</button><button>证件照制作</button></view>
+                </view>
+                
+                
+                
+                
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                <view class='content1'>
+                <view class='content1-item'><text>02-12  19:08</text>
+                <view class='item'>
+                <view class='item-top'><text>物理学院光电傅里叶光学15试卷</text><text>￥0.25</text></view>
+<view class='item-bottom'><text>35页</text><text>共1份</text><text>（钱包抵扣￥0.10）</text></view>
+                </view>
+                <view class='order1'>
+                <view class='order-left'><text>送货上门</text><text>配送员：</text><text>小张</text></view>
+                <view class='order1-text'><text>收货</text></view>
+                </view>
+                </view>
+
+  <view class='content1-item'><text>02-12  19:08</text>
+                <view class='item'>
+                <view class='item-top'><text>物理学院光电傅里叶光学15试卷</text><text>￥0.25</text></view>
+<view class='item-bottom'><text>35页</text><text>共1份</text><text>（钱包抵扣￥0.10）</text></view>
+                </view>
+                <view class='order2'>
+                <view class='order2-left'><text>门店自取</text><text>龙洞广工校内A区宿舍楼下</text></view>
+                <view class='order2-text'><text>收货</text></view>
+                <view class='take'><text>取货码：</text><text>232323</text></view>
+                </view>
+                </view>
+
+   <view class='content1-item'><text>02-12 14:20</text>
+                <view class='item'>
+                <view class='item-top'><text>一寸照</text><text>￥0.25</text></view>
+<view class='item-bottom'><text>12张</text><text>共1份</text><text>（钱包抵扣￥1.00）</text></view>
+                </view>
+                <view class='order1'>
+                <view class='order-left'><text>送货上门</text><text>配送员：</text><text>老张</text></view>
+                <view class='order1-text'><text>收货</text></view>
+                </view>
+                </view>
+
+  <view class='content1-item'><text>02-12 11:08</text>
+                <view class='item'>
+                <view class='item-top'><text>二寸照</text><text>￥26.00</text></view>
+<view class='item-bottom'><text>35页</text><text>共1份</text><text></text></view>
+                </view>
+                <view class='order2'>
+                <view class='order2-left'><text>门店自取</text><text>龙洞广工校内A区宿舍楼下</text></view>
+                <view class='order2-text'><text>收货</text></view>
+                <view class='take'><text>取货码：</text><text>232323</text></view>
+                </view>
+                </view>
+<view class='more'><text>没有更多啦</text></view>
+                </view>
+                
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                <view class='content1'>
+                 <view class='content1-item'><text>02-12 19:08</text>
+                <view class='item'>
+                <view class='item-top'><text>物理学院光电傅里叶光学15试卷</text><text>￥0.25</text></view>
+<view class='item-bottom'><text>35页</text><text>共1份</text><text>（钱包抵扣￥0.10）</text></view>
+                </view>
+                </view>
+                
+                <view class='content1-item'><text>02-12 14:20</text>
+                <view class='item'>
+                <view class='item-top'><text>一寸照</text><text>￥12.00</text></view>
+<view class='item-bottom'><text>12张</text><text>共1份</text><text>（钱包抵扣￥1.00）</text></view>
+                </view>
+                </view>
+                
+                  <view class='content1-item'><text>02-12 9:20</text><text>已取消</text>
+                <view class='item'>
+                <view class='item-top'><text>一寸照</text><text>￥26.00</text></view>
+<view class='item-bottom'><text>24张</text><text>共2份</text><text></text></view>
+                </view>
+                </view>
+                <view class='more'><text>没有更多啦</text></view>
+                </view>
+                
+                
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

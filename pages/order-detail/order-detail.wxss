@@ -1,0 +1,208 @@
+/* pages/order-detail/order-detail.wxss */
+page{
+  width:100%;
+  background: #F3F3F3;
+}
+.view-style{
+  width:100%;
+  padding:92rpx 40rpx 0 46rpx;
+   box-sizing: border-box; 
+}
+.top-left{
+  width:514rpx;
+  height:84rpx;
+  background: #FFFFFF;
+  display: inline-block;
+  border-radius:20rpx;
+  line-height: 84rpx;
+  /* text-align: center; */
+   box-shadow: 0 2rpx 4rpx #C4D7FA
+}
+.top-left text{
+  font-family: PingFang SC;
+  font-weight: Bold;
+  font-size: 28rpx;
+  color:#595959; 
+  margin-left: 44rpx;
+
+}
+.top-right{
+  width:140rpx;
+  height:84rpx;
+  border-radius:20rpx;
+  background: #FFFFFF;
+   display: inline-block;
+    margin-left: 10rpx; 
+    text-align: center;
+    line-height: 84rpx;
+    box-shadow: 0 2rpx 4rpx #C4D7FA;
+}
+.top-right text{
+    font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 28rpx;
+  color:#000000; 
+}
+.center{
+  width:660rpx;
+  /* height:146rpx; */
+       padding-top:12rpx; 
+  padding-left: 48rpx;
+  padding-bottom: 26rpx;
+
+    background: #FFFFFF;
+      box-shadow: 0 2rpx 4rpx #C4D7FA;
+      box-sizing: border-box;
+      border-radius:20rpx;
+      margin-top: 20rpx;
+}
+.center-top {
+
+}
+.center-top text{ 
+   font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#999999;
+}
+.center-top1 text{ 
+   font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#999999;
+}
+.top1-right{
+  float: right;
+  margin-right: 50rpx;
+}
+ .top1-right>text:nth-child(2) {
+font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#595959;
+border-bottom:2rpx solid #999999;
+}
+ 
+.center-bottom{
+   margin-top:12rpx; 
+}
+.center-bottom text{
+     font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#595959;
+}
+.center-bottom>text:nth-child(2){
+  display: block;
+  margin-top: 16rpx;
+}
+.center-bottom1{
+  margin-top:12rpx;
+}
+.center-bottom1 text{
+     font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#595959;
+}
+.bottom1-bottom>text:nth-child(2){
+  margin-left: 92rpx;
+}
+.center1{
+  margin-top: 20rpx;
+  width:660rpx;
+  height:244rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 4rpx #C4D7FA;
+     border-radius:20rpx 20rpx 0 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .image{
+    width:185rpx;
+    height:220rpx;
+    border:2rpx solid #707070;
+  }
+  .center2{
+  margin-top: 4rpx;
+  width:660rpx;
+  height:72rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 4rpx #C4D7FA;
+     /* border-radius:20rpx; */
+     display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    line-height: 72rpx;
+    
+  }
+  .center2>text:nth-child(1){
+      font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#999999;
+  margin-left: 48rpx;
+  }
+  .center2>text:nth-child(2){
+      font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#595959;margin-right: 44rpx;
+  }
+  .center3{
+    padding-top:8rpx;
+    margin-top: 4rpx;
+  width:660rpx;
+  height:214rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 4rpx #C4D7FA;
+  border-radius:0 0 20rpx 20rpx;
+  padding-left:48rpx; 
+   box-sizing: border-box; 
+  }
+  .price{
+     
+     display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* line-height: 214rpx; */
+  }
+  .price text{
+    margin-top:12rpx;
+ font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 24rpx;
+  color:#999999;
+  
+  }
+  .price>text:nth-child(1){
+    /* margin-left:48rpx; */
+  }
+   .price>text:nth-child(2){
+    margin-right:44rpx;
+  }
+  .center3>.price:nth-child(3){
+    margin-bottom: 12rpx;
+  }
+    .center3>.price:nth-child(4){
+      border-top: 2rpx solid #F7F7F7;
+    }
+  .center3>.price:nth-child(4) text{
+    color: #595959;
+    margin-top: 0;
+
+  }
+  .bottom{
+    margin-top: 30rpx;
+    /* display: flex; */
+  }
+  .bottom text{
+    display: block;
+    font-family: PingFang SC;
+  font-weight: Regular;
+  font-size: 20rpx;
+  color:#999999;
+  margin-left:48rpx;
+  margin-top: 10rpx;
+  }

@@ -1,0 +1,38 @@
+<!--pages/photo/photo.wxml-->
+<view class='view-style'>
+
+ <block  wx:for="{{list}}" wx:key="{{i}}">
+<view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>{{item.name}}</text><text>{{item.num}}</text></view>
+</view>
+
+</block> 
+<!-- <view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>四六级电子相</text><text>25*35mm</text></view>
+</view>
+<view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>四六级电子相</text><text>25*35mm</text></view>
+</view>
+<view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>四六级电子相</text><text>25*35mm</text></view>
+</view>
+<view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>四六级电子相</text><text>25*35mm</text></view>
+</view>
+<view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>四六级电子相</text><text>25*35mm</text></view>
+</view>
+<view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>四六级电子相</text><text>25*35mm</text></view>
+</view><view class='content'>
+<view class='image'></view>
+<view class='bottom'><text>四六级电子相</text><text>25*35mm</text></view>
+</view> -->
+</view>

@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/home/home",
+      "pages/shiyan/shiyan",
+     
+      "pages/file/file",
+    "pages/mydocument/mydocument",
+      "pages/ordercenter/ordercenter",
+      "pages/money/money",
+    "pages/made-detail/made-detail",
+    
+      "pages/document/document", 
+        "pages/tijiao/tijiao",
+  
+    "pages/success/success",
+    "pages/photo/photo",
+        "pages/order-detail1/order-detail1",
+        "pages/contact/contact",
+    "pages/mine/mine",
+    "pages/erweima/erweima",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+  
+}

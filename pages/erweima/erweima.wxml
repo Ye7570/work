@@ -1,0 +1,4 @@
+<!--pages/erweima/erweima.wxml-->
+ <import src="../temlate/template.wxml" />  
+<template is="tabBar" data="{{tabBar: tabBar}}" />  
+

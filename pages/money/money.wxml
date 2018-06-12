@@ -1,0 +1,62 @@
+<!--pages/money/money.wxml-->
+<view class='view-style'>
+<view class='view-content'>
+<view class='view-money'>
+<view class='money-top'>
+<text>我的钱包</text>
+
+</view>
+<view class='money-bottom'>
+<text>余额</text>
+<view class='money-text'>
+<text>￥ 0.05</text>
+</view>
+</view>
+
+</view>
+<view class='content-bottom'>
+<view class='content-left' bindtap='check' style="{{flag1==true?'background: #69B2FC;':'background: #FFFFFF;'}}"><text>查看流水</text></view>
+<view class='content-right' bindtap='check1' style="{{flag2==true?'background: #69B2FC;':'background: #FFFFFF;'}}"><text>分销奖励</text></view>
+</view>
+</view>
+<view class='content' wx:if="{{flag3}}">
+<view class='content-item'>
+<view class='item-top'><text>一寸照</text><text>-  ￥26.00</text></view>
+<view class='item-bottom'><text>共2份</text><text>02-18 12:00</text></view>
+</view>
+<view class='content-item'>
+<view class='item-top'><text>14级傅里叶光学试卷</text><text>- ￥0.34</text></view>
+<view class='item-bottom'><text>共1份</text><text>02-18 11:30</text></view>
+</view>
+
+<view class='content-item'>
+<view class='item-top'><text>14级傅里叶光学试卷</text><text>+ ￥0.34</text></view>
+<view class='item-bottom'><text>共2份</text><text>02-18 13:28</text></view>
+</view>
+<view class='more'><text>没有更多啦</text></view>
+
+</view>
+<view class='content1' wx:if="{{flag3}}">
+<view class='content1-item'>
+<view class='image'><image src='../images/bubble_1.png'></image></view>
+<view class='item-right'>
+<view class='item-top1'><text>Tintin</text><text>￥0.02</text></view>
+<view class='item-bottom1'><text>02-18 12:00</text></view>
+</view>
+</view>
+<view class='content1-item'>
+<view class='image'><image src='../images/bubble_1.png'></image></view>
+<view class='item-right'>
+<view class='item-top1'><text>Cuagiahong</text><text>￥0.34</text></view>
+<view class='item-bottom1'><text>02-18 9:20</text></view>
+</view>
+</view>
+<view class='more'><text>没有更多啦</text></view>
+</view>
+<view class='null' wx:if="{{flag1}}"><text>您还没有消费记录</text>
+</view>
+<view class='null1'  wx:if="{{flag2}}"><text>您还没有分享记录</text>
+<button>邀请好友</button>
+
+</view>
+</view>
